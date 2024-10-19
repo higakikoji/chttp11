@@ -28,8 +28,8 @@ int main(int argc, char *argv[]) {
 	OpenSSL_add_all_algorithms();
 
 	SSL_CTX *ctx = SSL_CTX_new(SSLv23_server_method());
-	SSL_CTX_use_certificate_file(ctx, "/usr/local/bin/c/http11/certificate.crt", SSL_FILETYPE_PEM);
-	SSL_CTX_use_PrivateKey_file(ctx, "/usr/local/bin/c/http11/private_key.key", SSL_FILETYPE_PEM);
+	SSL_CTX_use_certificate_file(ctx, "/etc/httpd/conf/ssl/crt/coressl32852575.crt", SSL_FILETYPE_PEM);
+	SSL_CTX_use_PrivateKey_file(ctx, "/etc/httpd/conf/ssl/key/secret.key", SSL_FILETYPE_PEM);
 #endif
 	
 	// Create socket.
